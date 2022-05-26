@@ -1,0 +1,162 @@
+.navBarAbsolute{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 5em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333333;
+      z-index: 1;
+      padding: 0 2em;
+      transition: all .5s ease-in-out;
+      transform: translate(-100%, 0);
+}
+.navBarAbsolute__Active{
+      display: flex;
+      transform: translate(0, 0);
+}
+.navBarAbsolute__Top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.navBarAbsolute__logo{
+      width: 20%;
+}
+.navBarAbsolute__link{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      padding: .5em 0;
+}
+.navBarAbsolute__button{
+      background-color: #4BFFA5;
+      border: none;
+      border-radius: 100px 0 100px 0;
+      padding: 1rem 3rem;
+      
+      font-weight: bold;
+      font-size: 16px;
+      color: #333333;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+}
+.navBarAbsolute__button:hover{
+      background-color: #3bca83;
+      box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
+}
+.navBarAbsolute__menu{
+      display: flex;
+      gap: 5em;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.navBar{
+      padding: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      z-index: 1;
+}
+.navBar__menu ul{
+      display: flex;
+      gap: 5em;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.navBar_menu__link{
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+}
+.navBar_menu__link::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 4px;
+      border-radius: 5px;
+      background-color: #4BFFA5;
+      transition: width 0.3s ease-in-out;
+      margin: 0 auto;
+}
+.navBar_menu__link:hover::after{
+      width: 100%;
+}
+
+.navBar__button{
+      background-color: #4BFFA5;
+      border: none;
+      border-radius: 100px 0 100px 0;
+      padding: 1rem 3rem;
+      
+      font-weight: bold;
+      font-size: 16px;
+      color: #333333;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+}
+.navBar__button:hover{
+      background-color: #3bca83;
+      box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
+}
+.BurguerMenu__container{
+      display: none;
+      flex-direction: column;
+      padding-left: 8px;
+}
+.BurguerMenu__container i{
+      background-color: #3bca83;
+      width: 32px;
+      height: 4px;
+      margin: 4px;
+      border-radius: 2px;
+      transition: all ease 0.5s;
+}
+.BurguerMenu__container .open:nth-child(1){
+      transform: rotate(45deg) translateY(16px);
+}
+.BurguerMenu__container .open:nth-child(2){
+      opacity: 0;
+}
+.BurguerMenu__container .open:nth-child(3){
+      transform: rotate(-45deg) translateY(-16px);;
+}
+.BurguerMenu__container .closed:nth-child(1){
+      transform: rotate(0deg) translateY(0px);
+}
+.BurguerMenu__container .closed:nth-child(2){
+      opacity: 1;
+}
+.BurguerMenu__container .closed:nth-child(3){
+      transform: rotate(0deg) translateY(0px);
+}
+@media (max-width: 768px) {
+      .navBar__menu{
+            display: none;
+      }
+      .navBar__button{
+            display: none;
+      }
+      .BurguerMenu__container{
+            display: flex;
+      }
+}
+@media (max-width: 425px){
+      .navBar__logo{
+            width: 20%;
+      }
+}

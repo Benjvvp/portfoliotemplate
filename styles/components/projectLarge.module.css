@@ -1,0 +1,107 @@
+.projectLargeCard{
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #F0F0F0;
+      border-radius: 0 20px 20px 20px;
+      height: 24em;
+}
+.projectLargeCard__textContent{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 1em;
+      height: 90%;
+      width: 40%;
+}
+.projectLargeCard_textContent__title{
+      font-size: 32px;
+      color: #2F2E41;
+      font-weight: 500;
+}
+.projectLargeCard_textContent__description{
+      padding-top: 10%;
+      font-size: 20px;
+      color: #2F2E41;
+}
+.projectLargeCard_textContent__link{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 20px;
+      color: #FF6582;
+      font-weight: bold;
+      gap: .5em;
+      transition: all .2s ease-in-out;
+}
+.projectLargeCard_textContent__link:hover{
+      transform: translateX(.5em);
+      filter: drop-shadow(0 0 .1em rgba(255, 101, 130, .3));
+}
+.projectLargeCard__banner img{
+      margin-left: auto;
+      background-position: center;
+      background-size: cover;
+}
+
+/* Responsive 1440px */
+@media (max-width: 1440px) {
+      .projectLargeCard{
+            height: 20em;
+      }
+      .projectLargeCard__banner img{
+            width: 80%;
+      }
+      .projectLargeCard_textContent__title{
+            font-size: 28px;
+      }
+      .projectLargeCard_textContent__description{
+            font-size: 18px;
+      }
+      .projectLargeCard_textContent__link{
+            font-size: 18px;
+      }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+      .projectLargeCard__banner img{
+            width: 70%;
+      }
+      .projectLargeCard__textContent{
+            width: 60%;
+      }
+      .projectLargeCard_textContent__title{
+            font-size: 24px;
+      }
+      .projectLargeCard_textContent__description{
+            font-size: 14px;
+      }
+      .projectLargeCard_textContent__link{
+            font-size: 14px;
+      }
+}
+@media (max-width: 425px) {
+      .projectLargeCard__banner{
+            display: none;
+      }
+      .projectLargeCard__textContent{
+            width: 100%;
+            align-items: center;
+      }
+      .projectLargeCard_textContent__title{
+            font-size: 20px;
+      }
+      .projectLargeCard_textContent__description{
+            font-size: 12px;
+      }
+      .projectLargeCard_textContent__link{
+            font-size: 12px;
+      }
+      .projectLargeCard__linkArrow{
+            display: none;
+      }
+}

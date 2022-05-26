@@ -1,0 +1,82 @@
+.projectSmallCard{
+      border-radius: 20px;
+      cursor: pointer;
+      position: relative;
+      transition: transform .2s ease-in-out;
+      overflow: hidden;
+      height: 22em;
+}
+.projectSmallCard:hover{
+      transform: translateY(-1em);
+}
+.projectSmallCard:hover .projectSmallCard__textContent{
+      bottom: 0;
+}
+.projectSmallCard__Banner img{
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px;
+}
+.projectSmallCard__textContent{
+      height: 22em;
+      width: 100%;
+      position: absolute;
+      border-radius: 20px;
+      background-color: #2f2e49dc;
+      left: 0;
+      bottom: -110%;
+      transition: all .2s ease-in-out;
+}
+.projectSmallCard__textContent__title{
+      font-size: 36px;
+      color: #4BFFA5;
+      font-weight: bold;
+      margin-top: -1em;
+      text-align: center;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+}
+
+/* Responsive 1440px */
+@media (max-width: 1440px) {
+      .projectSmallCard{
+            height: 18em;
+      }
+      .projectSmallCard__textContent{
+            height: 18em;
+      }
+      .projectSmallCard__textContent__title{
+            font-size: 30px;
+      }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+      .projectSmallCard{
+            height: 12em;
+      }
+      .projectSmallCard__textContent{
+            height: 12em;
+      }
+      .projectSmallCard__textContent__title{
+            font-size: 24px;
+      }
+}
+@media (max-width: 425px) {
+      .projectSmallCard{
+            height: 14em;
+            margin-bottom: 1em;
+      }
+      .projectSmallCard__textContent{
+            height: 14em;
+      }
+      .projectSmallCard__textContent__title{
+            font-size: 24px;
+      }
+      .projectSmallCard__Banner{
+            height: 14em;
+      }
+}

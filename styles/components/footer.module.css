@@ -1,0 +1,129 @@
+.footer {
+  height: 100%;
+  min-height: 15em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em 10%;
+}
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  height: 80%;
+  width: 100%;
+}
+.footerContent__myName {
+  position: relative;
+  font-size: 76px;
+  font-weight: bold;
+  color: #4bffa5;
+  text-align: center;
+  padding-right: 1em;
+}
+.footerContent__myName::after {
+  content: "";
+
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: #4bffa5;
+  right: 0;
+
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footerContent__titleSubSection {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 1%;
+}
+.footerContent__myServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+  height: 80%;
+  width: 100%;
+  margin-bottom: auto;
+}
+.footerContent__mySocials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+  height: 80%;
+  width: 100%;
+  margin-bottom: auto;
+}
+.footerContent__link {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  transition: .5s ease;
+}
+.footerContent__link:hover{
+  color: #4bffa5;
+}
+.footer__img {
+  height: 100%;
+  width: 100%;
+}
+.footer__img img {
+  margin-left: auto;
+  height: 80%;
+  width: 80%;
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+  .footerContent__myName {
+    font-size: 40px;
+  }
+  .footerContent__titleSubSection {
+    font-size: 24px;
+  }
+  .footerContent__link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .footerContent{
+    flex-direction: column;
+    gap: 3em;
+  }
+  .footerContent__myName{
+    font-size: 64px;
+    padding: 0;
+    margin-bottom: 1%;
+  }
+  .footerContent__myName::after{
+    height: 4px;
+    width: 80%;
+    bottom: -10%;
+    top: auto;
+    display: block;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+  .footerContent__titleSubSection{
+    font-size: 32px;
+  }
+  .footerContent__link{
+    font-size: 16px;
+  }
+  .footer__img{
+    height: 50%;
+    width: 50%;
+  }
+  .footer__img img{
+    margin: 0 auto;
+  }
+}

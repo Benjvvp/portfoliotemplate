@@ -1,0 +1,131 @@
+.heroSection{
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 25vh;
+}
+.heroSection__greetings{
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+}
+.heroSection__name{
+  color: #4BFFA5;
+  font-size: 96px;
+  font-weight: bold;
+}
+.heroSection__description{
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: normal;
+  padding-bottom: 2%;
+}
+.heroSection__arrowDown{
+  animation: arrowDown 1.5s ease-in-out infinite;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.heroSection__arrowDown:hover{
+  animation-play-state: paused;
+}
+
+.formSection{
+  padding-top: 10vh;
+  height: 100vh;
+  background-color: #333333;
+}
+.formSection__title{
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  width: 70%;
+}
+.formSection__InputCustomize{
+  padding: 1em 1em;
+  border: 2px solid #4BFFA5;
+  border-radius: 15px;
+  background-color: #222222;
+  font-size: 15px;
+  transition: all .5s ease;
+  color: rgba(255, 255, 255, 0.8);
+}
+.formSection__InputCustomize::placeholder{
+  color: rgba(255, 255, 255, 0.3);
+}
+.formSection__InputCustomize:focus{
+  outline: none;
+  box-shadow: 0px 10px 1em #4bffa523;
+}
+.formSection__CheckboxLabel{
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 1em;
+}
+.formSection__Button{
+  background-color: #4BFFA5;
+  border-radius: 15px;
+  padding: 1em 1em;
+  width: 10%;
+  min-width: 13em;
+  color: #222222;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all .5s ease;
+}
+.formSection__Button:hover{
+  background-color: #3bca83;
+  box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
+}
+@keyframes arrowDown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+  .heroSection__arrowDown{
+    padding-top: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .heroSection__greetings{
+    font-size: 32px;
+  }
+  .heroSection__name{
+    font-size: 84px;
+    text-align: center;
+  }
+  .heroSection__description{
+    width: 80%;
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .heroSection__greetings{
+    font-size: 28px;
+  }
+  .heroSection__name{
+    font-size: 54px;
+  }
+  .heroSection__description{
+    font-size: 18px;
+  }
+  .heroSection__arrowDown{
+    padding-top: 1em;
+    width: 20%;
+  }
+}
