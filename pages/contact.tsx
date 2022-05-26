@@ -1,4 +1,3 @@
-import { Head } from "next/document";
 import Footer from "../components/footer";
 import NavBar from "../components/navBar";
 import styles from "../styles/Contact.module.css";
@@ -6,31 +5,6 @@ import styles from "../styles/Contact.module.css";
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Walter Lara - Contact</title>
-        <meta
-          name="description"
-          content="Hello on this page you can contact me, I hope you have met me properly."
-        />
-        <meta
-          name="keywords"
-          content="front-end, developer, walter, walter-mendoza, waltermendoza, waltermendoza.com, waltermendoza.com/portfolio, waltermendoza.com/portfolio/home"
-        />
-        <meta name="author" content="Walter Mendoza" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="referrer" content="origin" />
-        <meta name="theme-color" content="#000000" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="Walter Mendoza" />
-        <meta name="application-name" content="Walter Mendoza" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <NavBar />
       <div className={`${styles.heroSection}`}>
         <h1 className={`${styles.heroSection__name}`}>Contact me</h1>

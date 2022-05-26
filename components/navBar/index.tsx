@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import styles from "../../styles/components/navBar.module.css";
 
@@ -27,31 +28,38 @@ export default function NavBar() {
         </div>
         <div className={`${styles.navBar__menu}`}>
           <ul>
-            <li
-              className={`${styles.navBar_menu__link}`}
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              <a href="/">Home</a>
+            <li className={`${styles.navBar_menu__link}`}>
+              <Link href="/">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Home
+                </a>
+              </Link>
             </li>
             <li className={`${styles.navBar_menu__link}`}>
-              <a
-                href="/#projects"
-                onClick={() => {
-                  setStatus("close");
-                }}
-              >
-                Projects
-              </a>
+              <Link href="/#projects">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Projects
+                </a>
+              </Link>
             </li>
-            <li
-              className={`${styles.navBar_menu__link}`}
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              <a href="/contact">Contact</a>
+            <li className={`${styles.navBar_menu__link}`}>
+              <Link href="/contact">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -112,29 +120,38 @@ export default function NavBar() {
         </div>
         <div className={`${styles.navBarAbsolute__menu}`}>
           <ul>
-            <li
-              className={`${styles.navBarAbsolute__link}`}
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              <a href="/">Home</a>
+            <li className={`${styles.navBarAbsolute__link}`}>
+              <Link href="/">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Home
+                </a>
+              </Link>
             </li>
-            <li
-              className={`${styles.navBarAbsolute__link}`}
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              <a href="/#projects">Projects</a>
+            <li className={`${styles.navBarAbsolute__link}`}>
+              <Link href="/#projects">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Projects
+                </a>
+              </Link>
             </li>
-            <li
-              className={`${styles.navBarAbsolute__link}`}
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              <a href="/contact">Contact</a>
+            <li className={`${styles.navBarAbsolute__link}`}>
+              <Link href="/contact">
+                <a
+                  onClick={() => {
+                    setStatus("close");
+                  }}
+                >
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
